@@ -1,0 +1,38 @@
+.tab-inner{
+  width: 400px;
+}
+.btn span{
+  background-color: #ddd;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  /* a태그가 아닌 다른 태그에서도 
+     손가락 모양이 나오게 하는 CSS */
+  cursor: pointer;   
+  border: 1px solid black;
+  /* inline-block요소 사이는 알 수없는  여백이존재한다. 여백을 마이너스(-)값을
+  이용하여 앞으로 당겨주어야 한다.  */
+  margin-right: -5px;
+}
+.btn span:first-child{
+  background-color: white;
+}
+.btn span:last-child{
+  color: red;
+}
+.tab{
+  border:1px solid black;
+}
+.tab a{
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 5px;
+  padding: 2px;
+  border-bottom: 1px solid #000;
+}
+.tab a:last-child{
+  border-bottom: none;
+}

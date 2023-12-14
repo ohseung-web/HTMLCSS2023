@@ -1,0 +1,19 @@
+.parent div{
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin: 10px;
+}
+.child{
+  background-color: lightblue;
+  /* display: none; */
+}
+.child2{
+  background-color: gold;
+  /* opacity: 0; */
+}
+.child3{
+  background-color: lightgray;
+  visibility: hidden;
+}

@@ -1,0 +1,27 @@
+div {
+  background-color: #ccc;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  float: left;
+}
+.box1 {
+  /* box-shadow: x축이동거리 y축이동거리 퍼짐정도 색상; */
+  box-shadow: 5px 5px 20px rgba(16, 7, 7, 0.672);
+}
+.box2 {
+  box-shadow: 0 0 20px rgba(30, 143, 255, 0.818);
+}
+.box3 {
+  box-shadow: 10px 10px 0 rgba(220, 20, 60, 0.883);
+}
+.box4 {
+  box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.857);
+}
+.box5 {
+  box-shadow: inset 0 0 20px white
+}
+.box6 {
+  box-shadow: inset 0 0 100px #000;
+}

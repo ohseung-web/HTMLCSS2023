@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>paulHuemon</title>
+    <script
+      src="https://kit.fontawesome.com/2cd23a15d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="huemon.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header_search" id="headcolor">
+          <div class="search_item1">
+            <ul class="depth1">
+              <li>
+                <a href="#"
+                  >GLOBAL SHIPPING
+                  <span><i class="fa-solid fa-caret-down"></i></span
+                ></a>
+                <ul class="depth2">
+                  <li><a href="#">ENG</a></li>
+                  <li><a href="#">CHN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="search_item2">
+            <ul class="depth1">
+              <li>
+                <a href="#">마이페이지</a>
+                <ul class="depth2">
+                  <li><a href="#">MYACCOUNT</a></li>
+                  <li><a href="#">ORDERS</a></li>
+                  <li><a href="login.html" target="main" onclick="gojoin()">LOGIN</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <li>
+                <input type="text" placeholder="search" id="inputcolor" />
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass" id="iconcolor"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_title" id="headcolor2">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="로고" /></a>
+          </div>
+        </div>
+        <div class="header_navi" id="headcolor3">
+          <ul class="depth1" id="naviborder">
+            <li>
+              <a href="shop.html" target="main" onclick="gojoin();">SHOP</a>
+              <ul class="depth2">
+                <li>
+                  <a href="shop.html" target="main" onclick="gojoin();"
+                    >SUNGLASSES</a
+                  >
+                </li>
+                <li>
+                  <a href="glass.html" target="glass" onclick="gojoin();"
+                    id="glass">GLASSES</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">BRAND</a></li>
+            <li>
+              <a href="#">CAMPAIGN</a>
+              <ul class="depth2">
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">MEDIA</a></li>
+              </ul>
+            </li>
+            <li><a href="#">STOCKISTS</a></li>
+          </ul>
+        </div>
+      </header>
+      <iframe src="" frameborder="0" name="main" width="100%" height="970px">
+        <section id="main_section"></section>
+      </iframe>
+      <footer>
+        <p>
+          COMPANY. BANDO OPTICAL CORP. OFFICE. #237 NOWONRO, BUK-GU, DAEGU,
+          SOUTH KOREA<br />
+          CEO. LEE SANG TAK LICENSE. 504-81-89393 [COMPANY INFORMATION] MAIL
+          ORDER LICENSE. 2017-DAEGU BUKGU-0094 COPYRIGHT@PAULHUEMAN
+        </p>
+        <div class="footer_item">
+          <div class="menu_item">
+            <ul>
+              <li><a href="#">TERMS</a></li>
+              <li><a href="#">PRIVACY</a></li>
+              <li><a href="#">INQUIRY</a></li>
+            </ul>
+          </div>
+          <div class="menu_icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-blog"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <script>
+       function gojoin(){
+        let change = document.querySelector('.header_search');
+        change.style.backgroundColor="pink";
+       }
+    </script> -->
+
+    <script>
+
+      function gojoin() {
+        let changheader = document.querySelector('.header_search');
+        //  var headersearch = document.getElementById('headcolor');
+        var headersearch2 = document.querySelector('#headcolor a');
+        var headersearch3 = document.querySelector('.search_item2 a');
+        var headersearch4 = document.querySelector('.search_item2 i');
+        var headersearch5 = document.querySelector('input');
+        var headersearch6 = document.querySelector('#iconcolor');
+        var naviborder = document.querySelector('#naviborder');
+     
+        //  headersearch.style.backgroundColor="rgb(59,59,59)";
+        changheader.style.backgroundColor = 'rgb(59,59,59)';
+        changheader.style.padding = '0px 400px';
+
+        headersearch2.style.color = 'white';
+        headersearch3.style.color = 'white';
+        headersearch4.style.color = 'white';
+        headersearch5.style.borderBottomColor = 'white';
+        headersearch6.style.color = 'white';
+        naviborder.style.borderBottom = '1px solid lightgray';
+
+        var headertitle = document.querySelector('.container .header_title');
+        //  var headertitle=document.getElementById('headcolor2');
+        headertitle.style.backgroundColor = 'white';
+
+        var headernavi = document.getElementById('headcolor3');
+        headernavi.style.backgroundColor = 'white';
+      }
+
+    </script>
+    
+  </body>
+</html>

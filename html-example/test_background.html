@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>배경이미지</title>
+    <style>
+      body {
+        line-height: 1.5em;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* background-image: url(images/back-image-01.jpg) ; */
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url(images/back-image-01.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .intro-txt {
+        font-size: 40px;
+        color: white;
+        text-shadow: 0 0 10px yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro-txt">dignity & initiative</div>
+  </body>
+</html>

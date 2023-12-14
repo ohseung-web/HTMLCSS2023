@@ -1,0 +1,13 @@
+.menu{
+   list-style: none;
+   font-size: 50px;
+   font-weight: bold;
+   text-align: center;
+   color: crimson;
+   text-shadow: 2px 2px 0 yellowgreen, 5px 5px 0 white;
+}
+/* before라는 가상 클래스를 사용하여
+   원하는 아이콘 모양을 입력 할 수 있다. */
+.menu li:before {
+  content: "★ ";
+}

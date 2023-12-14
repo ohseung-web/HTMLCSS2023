@@ -1,0 +1,44 @@
+.parent {
+  position: relative;
+  border: 5px solid red;
+  width: 600px;
+  height: 300px;
+  margin: 100px;
+}
+.child {
+  position: absolute;
+  background-color: navy;
+  width: 100px;
+  height: 100px;
+  /* 1번 */
+  left: 0;
+  top: 100%; /* top:300px과 동일*/
+}
+.child2 {
+  position: absolute;
+  background-color: navy;
+  width: 100px;
+  height: 100px;
+  /* 2번 */
+  top: 0;
+  left: 100%;
+}
+.child3 {
+  position: absolute;
+  background-color: navy;
+  width: 100px;
+  height: 100px;
+  /* 3번 */
+  left: 100%;
+  top: 100%;
+}
+.child4 {
+  position: absolute;
+  background-color: navy;
+  width: 100px;
+  height: 100px;
+  /* 4번 */
+  top: -100px;
+  left: 0;
+  
+}

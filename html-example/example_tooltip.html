@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tooltip 만들기</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+      body {
+        font-family: 'Raleway', sans-serif;
+        color: #222;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* vh(viewport height) : 현재 실행 중인 스크린 크기에 맞춰 상대적 크기 반환하는 단위*/
+        height: 100vh;
+      }
+      .icon {
+        margin: 10px;
+        width: 233px;
+        height: 327px;
+        position: relative;
+      }
+      /* 여기까지 화면 정중앙에 아이콘 배치 */
+      .icon span {
+        /* 어떤요소든 position:absolute주면
+           inline-block 속성이 된다. */
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 300px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        /* 부모요소를 기준으로 수직 위치  */
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        /* display: none; */
+        opacity: 0;
+        transition: 0.5s;
+        visibility: hidden;
+      }
+      .icon span::after {
+        content: '';
+        position: absolute;
+        background-color: black;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg) translateX(-50%);
+        bottom: -5px;
+        left: 50%;
+      }
+      .icon:hover span {
+        /* display: block; */
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">
+        <img src="images/logo-css.png" alt="" />
+        <span>
+          CSS(Cascading Style Sheets)는 웹 페이지에 스타일과 레이아웃을 적용할
+          때 사용합니다.
+        </span>
+      </div>
+      <div class="icon">
+        <img src="images/logo-html.png" alt="" />
+        <span>
+          HTML(HyperText Markup Language)은 웹을 이루는 가장 기초적인 구성
+          요소이다.
+        </span>
+      </div>
+      <div class="icon">
+        <img src="images/logo-js.png" alt="" />
+        <span>
+          웹 브라우저에서 HTML 문서에 내장한 JavaScript 를 읽으면 즉시 해석되어,
+          소스코드가 실행된 결과를 눈으로 볼 수 있다.
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

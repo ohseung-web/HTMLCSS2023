@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown navigation 3</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: roboto;
+    }
+    body{
+      background-color: #00FF8C;
+    }
+    ul{
+      list-style: none;
+      background-color: #333;
+      text-align: center;
+    }
+    ul li{
+      display: inline-block;
+      position: relative;
+    }
+    ul li a{
+      display: block;
+      padding: 20px 20px;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+    }
+    ul li ul.dropdown li {
+      display: block;
+      background: #333;
+    }
+    ul li ul.dropdown{
+      width: auto;
+      background: #00FF8C;
+      position: absolute;
+      z-index: 999;
+      display: none;
+    }
+    ul li a:hover{
+      background: #222;
+    }
+    ul li:hover ul.dropdown{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Skills &#x25BE;</a>
+      <ul class="dropdown">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</body>
+</html>

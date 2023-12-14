@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>폰트어썸 이용한 입력필드</title>
+    <script
+      src="https://kit.fontawesome.com/2cd23a15d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        line-height: 1.5em;
+        margin: 0;
+        font-weight: 300;
+        /* 화면에 중앙정렬 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .item {
+        /* border:1px solid red; */
+        /* 부모요소의 크기가 커지면
+           자동으로 자식요소의 크기가
+           커지도록 부모요소에 width지정 */
+        width: 300px;
+        margin-bottom: 10px;
+        position: relative;
+      }
+      /* .item input[type=text]{} */
+      .item input {
+        border: 1px solid gray;
+        height: 40px;
+        width: inherit;
+        border-radius: 5px;
+        padding: 10px;
+        /* placeholder의 데이터 오른쪽 배치 */
+        padding-left: 50px;
+        /* 아웃트라인 없애기 */
+        outline: none;
+        transition: 0.3s;
+      }
+      .item .fa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background-color: gray; */
+        color: gray;
+        /* border-radius: 5px 0 0 5px; */
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        /* border: 1px solid blue; */
+        /* 아이콘 수직수평중앙 정렬 */
+        text-align: center;
+        line-height: 40px;
+        /* display: none; */
+      }
+      /* input에 클릭한 후의 속성 변경
+         focus 가상 클래스 이용한다. */
+      .item input:focus {
+        border: 1px solid dodgerblue;
+        box-shadow: 0 0 5px dodgerblue;
+        /* 변화 과정을 보려면 transition이용
+           단, transition은 input에 지정 */
+      }
+      /* 인접선택자는 아래 존재하는 요소만 사용가능*/
+      /* + : 
+           ~ : 형제 선택자 */
+      .item input:focus + .fa {
+        color: dodgerblue;
+        /* background-color: dodgerblue; */
+      }
+      /* imput 클릭하면  placeholder가 사라지는 속성 */
+      .item input:focus::placeholder {
+        visibility: hidden;
+      }
+      /* placeholder 글자 속성 변경 */
+      .item input::placeholder{
+        color : red;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="info">
+      <div class="item">
+        <input type="text" placeholder="Your Name" />
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="item">
+        <input type="email" placeholder="Email" />
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="item">
+        <input type="tel" placeholder="Phone Number" />
+        <i class="fa fa-phone"></i>
+      </div>
+    </form>
+  </body>
+</html>

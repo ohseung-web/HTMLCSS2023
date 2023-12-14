@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dropdwon Navigation 02</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+      body,
+      ul,
+      li {
+        /*ul과 li의 들여쓰기 해제  */
+        /* margin: 0;
+        padding: 0; */
+        list-style: none;
+        color: black;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      /* 1차 메뉴를 가로로 배치 */
+      .menu_wrap .dep1 > li {
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+        background-color: #ddd;
+        margin-left: -6px; /*li 사이의 여백 없애기 */
+        text-align: center;
+      }
+      /* 글자를 벗어나면 없어지는 손가락 포인터 해결 하기 : li와 a태그의 크기가 다르기 떄문 */
+      .menu_wrap .dep1 > li > a {
+        display: block;
+        padding: 10px 0;
+      }
+      /* 마우스 hover되면 a태그 색변경  */
+      .menu_wrap .dep1 > li:hover > a {
+        background-color: purple;
+        color: white;
+      }
+      /* a태그에 마우스를 오버하면 하위메뉴가 출력은 되지만 선택하면 사라지기 때문데
+     a태그가 아닌 li태그에 hover를 지정한다. */
+      .menu_wrap .dep1 > li:hover > .dep2 {
+        display: block;
+      }
+      /* dep2는 보이지 않게 설정 */
+      .menu_wrap .dep2 {
+        display: none;
+        background-color: pink;
+      }
+      .menu_wrap .dep2 a {
+        display: block;
+        padding: 10px 0;
+      }
+      .menu_wrap .dep2 a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu_wrap">
+      <ul class="dep1">
+        <li>
+          <a href="#">menu1</a>
+          <ul class="dep2">
+            <li><a href="#">submenu-1</a></li>
+            <li><a href="#">submenu-2</a></li>
+            <li><a href="#">submenu-3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">menu2</a>
+          <ul class="dep2">
+            <li><a href="#">submenu-1</a></li>
+            <li><a href="#">submenu-2</a></li>
+            <li><a href="#">submenu-3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">menu3</a>
+          <ul class="dep2">
+            <li><a href="#">submenu-1</a></li>
+            <li><a href="#">submenu-2</a></li>
+            <li><a href="#">submenu-3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">menu4</a>
+          <ul class="dep2">
+            <li><a href="#">submenu-1</a></li>
+            <li><a href="#">submenu-2</a></li>
+            <li><a href="#">submenu-3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

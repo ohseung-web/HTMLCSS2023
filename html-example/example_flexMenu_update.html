@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>flex 이용한 메뉴바</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      * {
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 100%;
+      }
+      .section {
+        width: 1200px;
+        height: 80px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+      }
+      .logo {
+        font-size: 36px;
+        padding: 0 0 0 30px;
+        line-height: 2.5em;
+      }
+      .navi .dep1 {
+        display: flex;
+        /* justify-content: center; */
+        
+      }
+      .navi .dep1 > li {
+        text-align: center;
+        width: 100px;
+        font-size: 20px;
+        margin: 0 15px;
+        line-height: 5em;
+        position: relative;
+      }
+      .navi .dep2 {
+        position: absolute;
+        left:50%;
+        transform:translateX(-50%);
+        width:120px;
+        display: none;
+        top: 80px;
+      }
+      .navi .dep2 li a {
+        display:block;
+        line-height: 3em;
+        font-size: 16px;
+        /* background-color: lime; */
+      }
+      .navi .dep1 > li:hover > .dep2 {
+        display: block;
+      }
+      .navi .dep1 > li > a:hover {
+        border-bottom: 2px solid purple;
+        color: purple;
+      }
+      .navi .dep2 li:hover {
+        background-color: rgba(211, 211, 211, 0.51);
+      }
+      /* .navi .dep2 li a {background:yellow;} */
+      .navi .dep2 li a:hover {
+        color: purple;
+      }
+      .profile ul {
+        display: flex;
+        /* justify-content: flex-end; */
+      }
+      .profile ul li {
+        font-size: 14px;
+        line-height: 7em;
+        margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="section">
+        <div class="logo">
+          <a href="#">LOGO</a>
+        </div>
+        <div class="navi">
+          <ul class="dep1">
+            <li>
+              <a href="#">Menu-1</a>
+              <ul class="dep2">
+                <li><a href="#">Sub-Menu1</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Menu-2</a>
+              <ul class="dep2">
+                <li><a href="#">Sub-Menu1</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Menu-3</a>
+              <ul class="dep2">
+                <li><a href="#">Sub-Menu1</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Menu-4</a>
+              <ul class="dep2">
+                <li><a href="#">Sub-Menu1</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+                <li><a href="#">Sub-Menu2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="profile">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

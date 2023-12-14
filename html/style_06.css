@@ -1,0 +1,23 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin: 10px;
+  float: left;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  line-height: 5em;
+}
+.box1 {
+  border-radius: 20px 40px 40px 0;
+}
+.box2 {
+  border-radius: 20px 50px 30px;
+}
+.box3 {
+  border-radius: 10px 50px;
+}
+.box4 {
+  border-radius: 10px;
+}

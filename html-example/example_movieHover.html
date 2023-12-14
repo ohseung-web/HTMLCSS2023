@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Hover</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Raleway', sans-serif;
+        color: #222;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      .items {
+        display: flex;
+        justify-content: center;
+        /* text-align: center; */
+      }
+      .item {
+        /* display: inline-block; */
+        text-align: center;
+        width: 300px;
+        height: 430px;
+        margin-right: 20px;
+        position: relative;
+      }
+      .item img {
+        border-radius: 10px;
+      }
+      .caption {
+        width: 300px;
+        height: 420px;
+        background-color: rgba(0, 0, 0, 0.686);
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        color: white;
+        padding: 20px;
+        padding-top: 50px;
+        /* display:none은 transition속성을 줄 수 없기때문에 opactiy:0으로 지정한다. */
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .caption a {
+        color: white;
+        background-color: teal;
+        padding: 7px;
+        border-radius: 3px;
+      }
+      .caption a:hover {
+        background-color: white;
+        color: #000;
+      }
+      /* item에 마우스 오버되면 caption이 보여라 */
+      .item:hover .caption {
+        opacity: 1;
+      }
+      span {
+        color:aquamarine;
+        font-size: 30px;
+        font-weight: 400px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="item">
+        <img src="images/movie_poster01.jpg" alt="" />
+        <div class="caption">
+          <h2>미션 임파서블</h2>
+          <p>
+            가장 위험한 작전, 그의 마지막 선택 모든 인류를 위협할 새로운 무기를
+            추적하게 된 에딘 헌트(톰크루즈)와 IMF팀은 이 무기가 인류의 미래를
+            통제할 수 있다는 사실을 알게 된다.
+          </p>
+          <p>관람평 <span>9.3</span></p>
+          <a href="">View Details</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/movie_poster04.jpg" alt="" />
+        <div class="caption">
+          <h2>명탐정 코난</h2>
+          <p>
+            인터폴의 최첨단 정보 해양 시설인 '퍼시필 부이' 일본과 유럽의 CCTV
+            정보를 확인할 수 있을 뿐아니라, 장기 수배범이나 유괴당한 피해자를
+            전세계에서 찾아 낼 수 있는 '전연령인식'이라는 획기적인 AI기술을
+          </p>
+          <p>관람평 <span>9.5</span></p>
+          <a href="">View Details</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/movie_poster02.jpg" alt="" />
+        <div class="caption">
+          <h2>밀수</h2>
+          <p>
+            열길 물속은 알아도 한길 사람속은 모른다!!
+            <br /><br /><br />
+
+            평화롭던 바닷가 마을 군천에 화학 공장이 들어서면서 하루아침
+          </p>
+          <p>관람평 <span>0</span></p>
+          <a href="">View Details</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/movie_poster03.jpg" alt="" />
+        <div class="caption">
+          <h2>바비</h2>
+          <p>
+            원하는 무엇이든 될 수 있는 '바비랜드'에서 살아가던 '바비'가
+            현실세계와 이어진 포털의 균열을 발견하게 되고, 이를 해결하기 위해
+            '켄'과 예기치 못한 여정을 떠나면서 펼처지는 이야기
+          </p>
+          <p>관람평 <span>8.4</span></p>
+          <a href="">View Details</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

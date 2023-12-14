@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>표 만들기</title>
+    <style>
+      body {
+        font-size: 14px; /*표안의 글자모두 14포인트*/
+      }
+      table {
+        width: 800px; /*표가로 사이즈*/
+        border-collapse: collapse;/*표의 선을 가늘게 무너뜨리다.*/
+      }
+       table td,
+      table th {
+        text-align: center;
+        padding: 5px;
+        border: 1px solid lightgray;
+      }
+      table th {
+        background-color: dodgerblue;
+        color: #fff;
+      }
+      table caption{
+        text-align: right;
+        margin-bottom: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        기본 표 연습
+      </caption>
+      <tr>
+        <td>1st Cell</td>
+        <td>2nd Cell</td>
+      </tr>
+      <tr>
+        <td>3rd Cell</td>
+        <td>4th Cell</td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <!-- 코딩웍스 예제 표 만들기 -->
+    <!-- html5 부터는 모든 스타일은 css에서 작성해야 한다. -->
+    <table border="1">
+      <caption>
+        부가세가(VAT) 포함된 실제 지불금액 입니다.
+      </caption>
+      <tr>
+        <th>상품명</th>
+        <th>월정액</th>
+        <th>제공혜택</th>
+      </tr>
+      <tr>
+        <td>지상파 무제한 줄기기</td>
+        <td>14,300원</td>
+        <td>
+          지상파 3사의 드라마, 예능 프로그림을 가장빠르게 가장 경제적 서비스
+        </td>
+      </tr>
+      <tr>
+        <td>CJENM 무제한 즐기기</td>
+        <td>14,300원</td>
+        <td>모든 드라마, 예능 프로그림을 무제한 볼수있는 인기 월정액 서비스</td>
+      </tr>
+      <tr>
+        <td>JTBC 무제한 즐기기</td>
+        <td>7,700원</td>
+        <td>
+          JTBC 드라마, 예능 프로그림을 무제한으로 즐길 수 있는 인기 월정액
+          서비스
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Lobster&family=Lugrasimo&family=Lumanosimo&family=Noto+Sans+KR&family=Playball&display=swap');
+body {
+  background-color: #eee;
+}
+header {
+  width: 100%;
+  height: 156px;
+  background-color: white;
+  /* border: 1px solid red; */
+}
+.content {
+  width: 1050px;
+  height: 100px;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+}
+/* profile_item css 작성*/
+.profile_item ul {
+  width: inherit;
+  height: 35px;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.profile_item .customer_depth1 > li > a,
+.profile_item .customer_depth1 > li > span {
+  font-size: 12px;
+  line-height: 3em;
+  margin-right: 20px;
+}
+.customer_depth1 > li:nth-child(5) span {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 10px;
+  padding: 4px;
+}
+.profile_item .customer_depth1 > li:nth-child(1) > a {
+  color: purple;
+}
+.profile_item .customer_depth2 {
+  display: none;
+}
+.customer_depth1 li:nth-child(5):hover .customer_depth2 {
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 100px;
+  border: 1px solid gray;
+  background-color: white;
+  margin-left: -80px;
+  padding-left: 5px;
+}
+.customer_depth2 li > a {
+  font-size: 12px;
+  line-height: 2em;
+}
+/* content_items css 작성 */
+.content_items {
+  width: inherit;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* border: 1px solid red; */
+  margin-top: 8px;
+}
+.content_items .item_menu,
+.item_search,
+.item_icon {
+  width: 200px;
+  height: 65px;
+  /* border: 1px solid blue; */
+  /* flex: 1; */
+}
+.item_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+.item_menu div {
+  /* border: 1px solid green; */
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px;
+  text-align: center;
+}
+.item_menu div:nth-child(1) > a {
+  font-family: 'Lobster', cursive;
+  /* font-family: 'Lumanosimo', cursive; */
+  /* font-family: 'Lugrasimo', cursive; */
+  /* font-family: 'Playball', cursive; */
+  font-size: 40px;
+  color: purple;
+  line-height: 25px;
+  /* font-weight: bold; */
+}
+.item_menu div:nth-child(2) > a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 17px;
+  color: purple;
+  font-weight: bold;
+}
+.item_menu div:nth-child(3) > a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 17px;
+  color: gray;
+}
+.item_menu div:nth-child(3) sup {
+  color: red;
+  font-size: 3px;
+}
+.item_search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid red; */
+  flex: 3;
+}
+.item_search input[type='text'] {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid purple;
+  padding: 10px;
+  padding-left: 20px;
+}
+.item_search input[type='text']::placeholder {
+  color: gray;
+  font-weight: bold;
+}
+.item_search a {
+  /* display: none; */
+  position: absolute;
+  top: 8px;
+  right: 130px;
+  /* border: 1px solid red; */
+  width: 40px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: purple;
+}
+.item_icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.item_icon a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+/* 네비게이션 css */
+.content_navi {
+  width: 1058px;
+  height: 56px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.content_navi > .navi_depth1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex: 1; */
+  padding: 0 5px;
+}
+.content_navi > .navi_depth1 > li {
+  width: 150px;
+  height: 55px;
+  text-align: center;
+  line-height: 70px;
+  /* border: 1px solid blue; */
+}
+.content_navi > .navi_depth1 > li > a {
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-weight: bold; */
+  font-size: 15px;
+}
+.navi_depth1 > li:nth-child(1) span {
+  padding: 10px;
+}
+.navi_depth1 > li:nth-child(6) > a {
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+}
+.navi_depth1 > li:nth-child(6) a span {
+  color: purple;
+  font-size: 13px;
+}

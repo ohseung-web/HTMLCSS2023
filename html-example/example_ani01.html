@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>keyframe 도형 로딩 애니메이션</title>
+    <style>
+      /* Google Web font */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Raleway&display=swap');
+      body {
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5em;
+        margin: 0;
+        font-weight: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .Loading {
+      }
+      .Loading span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: gray;
+        border-radius: 50%;
+        animation: Loading 1s 0s Linear infinite;
+      }
+      .Loading span:nth-child(1) {
+        animation-delay: 0s;
+        background-color: crimson;
+      }
+      .Loading span:nth-child(2) {
+        animation-delay: 0.2s;
+        background-color: dodgerblue;
+      }
+      .Loading span:nth-child(3) {
+        animation-delay: 0.4s;
+        background-color: royalblue;
+      }
+      @keyframes Loading {
+        0% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Loading">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script>
+      let a = document.querySelector
+    </script>
+  </body>
+</html>

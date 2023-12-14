@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>폼 - select, option, textarea 연습</title>
+  </head>
+  <body>
+    <form>
+      <input type="checkbox" checked />게임하기
+      <input type="checkbox" />영화관람 <input type="checkbox" />음악감상
+    </form>
+    <br />
+    <form>
+      <input type="radio" checked />초등학교 <input type="radio" />중하교
+      <input type="radio" />고등학교
+    </form>
+    <br />
+    <form>
+      <label for="">남기실 말씀</label><br />
+      <textarea cols="40" rows="5"></textarea>
+    </form>
+    <br />
+    <form>
+      <select>
+        <option value="">Family Site</option>
+        <option value="건축사무소" selected>건축사무소</option>
+        <option value="시공사무소">시공사무소</option>
+        <option value="설계사무소">설계사무소</option>
+      </select>
+    </form>
+    <br />
+    <label for="age">당신이 좋아하는 반려동물은?</label>
+    <input type="text" list="age_options" />
+    <datalist id="age_options">
+      <option value="고양이"></option>
+      <option value="강아지"></option>
+      <option value="기린"></option>
+      <option value="고라니"></option>
+      <option value="오리"></option>
+      <option value="타란튤라"></option>
+      <option value="마타마타"></option>
+      <option value="알파카"></option>
+      <option value="수리부엉이"></option>
+      <option value="칡"></option>
+    </datalist>
+    <br />
+    <h3>버튼을 만들자</h3>
+    <hr />
+    <form>
+      <label for="">검색</label> : <input type="text" size="10" value="" />
+      <input type="button" value="Q1" />
+      <button type="button">Q2</button><br /><br />
+      <label for="">Summit 버튼</label> : <input type="submit" value="전송1" />
+      <button type="submit">전송2</button><br /><br />
+      <label for="">reset 버튼</label> : <input type="reset" value="리셋1" />
+      <button type="reset">리셋2</button>
+    </form>
+    <br>
+  <h3>회원 정보를 입력해주세요.</h3>
+  <hr>
+  <form>
+    email : <input type="email" placeholder="id@host"><br>
+    홈페이지 : <input type="url" placeholder="http://"><br>
+    전화번호 : <input type="tel" placeholder="010-1234-5678">
+          <input type="submit" value="확인"><br><br>
+  <hr>
+    검색어 : <input type="search" placeholder="검색어">
+          <input type="button" value="검색">
+  </form>
+  <br><br><br><br><br><br>
+        <h3>시간 정보 입력 HTML5 폼 요소들</h3>
+      초기 세팅 : 2023년 6월 13일 오후 3시 30분(10초 32)<br>
+      <hr>
+      <form>
+      <pre>
+      month :	<input type="month" value="2023-06"><br> 
+      week : 	<input type="week" value="2023-W22"><br>
+      data : 		<input type="date" value="2023-06-01"><br> 
+      time : 		<input type="time" value="15:30"><br>
+      local:		<input type="datetime-local" 
+                  value="2023-06-13T15:30:10.32"><br>
+      </pre>
+      </form>
+
+  </body>
+</html>

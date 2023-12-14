@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <a onClick="Mycolor()">Change Color</ㅁ>
+    <div id="myID">Hello World</div>
+
+    <input type="text" id="number">
+    <button type="button" onclick="outconsloe()">입력</button>
+
+    <script type='text/javascript'>
+
+    function Mycolor() {
+     //  let element1; 변수의 선언과 초기화가 동시에 일어나지 않는다.
+      // var는 변수의 선언과 초기화가 동시에 일어난다.
+      let element = document.getElementById("myID");
+      // element.style.backgroundColor='#900';
+      element.style.backgroundColor='rgb(43,43,43)';
+      element.style.color='white';
+     }
+
+    // input 입력된 값을 console.log에 출력하는 함수 작성
+     function outconsloe(){
+        const num=document.querySelector('#number');
+        console.log(num.value);
+     }
+
+</script>
+</body>
+</html>

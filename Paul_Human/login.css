@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  margin-top: 5px;
+}
+.container {
+  margin-top: 190px;
+  width: 970px;
+  height: 600px;
+  /* border: 1px solid red; */
+}
+.pageheader {
+  width: 940px;
+  height: 75px;
+  text-align: center;
+}
+.pageheader p{
+  line-height: 3em;
+  font-size: 12px;
+}
+.loginform{
+  width: 940px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.item{
+  width: 500px;
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+.item input{
+  width: 500px;
+  height: 40px;
+}
+.item input::placeholder{
+  font-size: 12px;
+  padding-left: 10px;
+}
+.item:nth-child(3){
+  display: flex;
+  justify-content: space-between;
+}
+.item:nth-child(3) button, 
+.item:nth-child(3) a{
+  display: inline-block;
+  width: 230px;
+  height: 40px;
+  background-color: rgb(43,43,43);
+  color: white;
+  font-size: 12px;
+}
+.item:nth-child(3) button{
+  cursor: pointer;
+}
+.item:nth-child(3) a{
+  text-align: center;
+  line-height: 40px;
+}
+.item:nth-child(4){
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.item:nth-child(4) p,
+.item:nth-child(4) a{
+  font-size: 12px;
+}

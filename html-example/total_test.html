@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>총연습하기</title>
+    <script
+      src="https://kit.fontawesome.com/2cd23a15d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      /* 영화 css */
+      /* body{
+      line-height: 1.5em;
+      color:black;
+      font-weight: 300;
+      margin: 0;
+    }
+    a{
+      color:black;
+      text-decoration: none;
+    } 
+      .items {
+        display: flex;
+        justify-content: center;
+      }
+      .item {
+        text-align: center;
+        width: 294px;
+        height: 420px;
+        margin-right: 10px;
+        position: relative;
+      }
+      .item .caption {
+        position: absolute;
+        width: 294px;
+        height: 420px;
+        background-color: rgba(0, 0, 0, 0.787);
+        top: 0;
+        left: 0;
+        color: white;
+        padding: 20px;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .caption a {
+        color: white;
+        background-color: teal;
+        border-radius: 3px;
+        padding: 5px;
+      }
+      .item:hover .caption {
+        opacity: 1;
+      }
+
+      /* sns css 
+       body {
+        line-height: 1.5em;
+        color: black;
+        font-weight: 300;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      .sns a{
+      폰트어썸 : inline-block이다. 
+        display: inline-block;
+        font-size: 40px;
+        margin: 10px;
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height는 height 사이즈만큼 지정 
+        line-height: 60px ;
+        border-radius: 50%;
+        color: white;
+      }
+      .sns a:nth-child(1){
+        background-color:#1877F2 ;
+      }
+      .sns a:nth-child(2){
+        background-color:#55acee ;
+      }
+      .sns a:nth-child(3){
+        background-color:#dd4b39 ;
+      }
+      .sns a:nth-child(4){
+        background-color:#0077b5 ;
+      }
+      .sns a:nth-child(5){
+        background-color:#e4405f ;
+      } 
+      */
+      body{
+        line-height: 1.5em;
+        font-weight: 300;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .item{
+        width: 300px;
+        position: relative;
+        margin-bottom: 10px;
+      }
+      .item input{
+        border:1px solid gray;
+        width: inherit;
+        height: 40px;
+        padding: 10px;
+        padding-left: 50px;
+        border-radius: 5px;
+        outline: none;
+        transition: 0.3s;
+      }
+      .item .fa{
+        /* border: 1px solid red; */
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: gray;
+        border-radius: 5px 0 0 5px;
+        color: white;
+        position: absolute;
+        font-size: 24px;
+        top:0;
+        left: 0;
+      }
+      .item input:focus{
+        border: 1px solid dodgerblue;
+        box-shadow: 0 0 3px dodgerblue;
+      }
+      /* 인접선택자 + 반드시 아래 인접선택자만 가능 */
+      .item input:focus + .fa{
+        background-color:dodgerblue;
+      }
+      .item input:focus::placeholder{
+        visibility: hidden;
+      }
+      .item input::placeholder{
+        color:lightgray;
+      } 
+    </style>
+  </head>
+  <body>
+    <!-- form input html -->
+    <form action="" class="info">
+      <div class="item">
+        <input type="text" placeholder="Your Name" />
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="item">
+        <input type="email" placeholder="Email" />
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="item">
+        <input type="tel" placeholder="Phone Number" />
+        <i class="fa fa-phone"></i>
+      </div>
+    </form>
+    <!-- sns html -->
+    <!-- <div class="sns">
+      <a href="#"> <i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div> -->
+    <!-- ------------ 영화 html   -->
+    <!-- <div class="items">
+    <div class="item">
+      <img src="images/movie_poster01.jpg" alt="" />
+      <div class="caption">
+        <h2>미션 임파서블</h2>
+        <p>
+          가장 위험한 작전, 그의 마지막 선택 모든 인류를 위협할 새로운 무기를
+          추적하게 된 에딘 헌트(톰크루즈)와 IMF팀은 이 무기가 인류의 미래를
+          통제할 수 있다는 사실을 알게 된다.
+        </p>
+        <p>관람평 <span>9.3</span></p>
+        <a href="">View Details</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/movie_poster04.jpg" alt="" />
+      <div class="caption">
+        <h2>명탐정 코난</h2>
+        <p>
+          인터폴의 최첨단 정보 해양 시설인 '퍼시필 부이' 일본과 유럽의 CCTV
+          정보를 확인할 수 있을 뿐아니라, 장기 수배범이나 유괴당한 피해자를
+          전세계에서 찾아 낼 수 있는 '전연령인식'이라는 획기적인 AI기술을
+        </p>
+        <p>관람평 <span>9.5</span></p>
+        <a href="">View Details</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/movie_poster02.jpg" alt="" />
+      <div class="caption">
+        <h2>밀수</h2>
+        <p>
+          열길 물속은 알아도 한길 사람속은 모른다!!
+          <br /><br /><br />
+
+          평화롭던 바닷가 마을 군천에 화학 공장이 들어서면서 하루아침
+        </p>
+        <p>관람평 <span>0</span></p>
+        <a href="">View Details</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/movie_poster03.jpg" alt="" />
+      <div class="caption">
+        <h2>바비</h2>
+        <p>
+          원하는 무엇이든 될 수 있는 '바비랜드'에서 살아가던 '바비'가
+          현실세계와 이어진 포털의 균열을 발견하게 되고, 이를 해결하기 위해
+          '켄'과 예기치 못한 여정을 떠나면서 펼처지는 이야기
+        </p>
+        <p>관람평 <span>8.4</span></p>
+        <a href="">View Details</a>
+      </div>
+    </div>
+  </div> -->
+  </body>
+</html>

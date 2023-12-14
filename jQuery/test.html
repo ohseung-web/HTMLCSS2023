@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dom 테스트</title>
+</head>
+<body>
+  <a href="javascript:add()">보여주기</a>
+  <a href="javascript:remove()">사라지기</a>
+  <script>
+    function add(){
+      let tables = document.createElement('table');
+      tables.setAttribute('id','target');
+      let trs = document.createElement('tr');
+      let tds = document.createElement('td');
+      let textNode = document.createTextNode('저는 현재 공부 중입니다.');
+      tables.appendChild(trs).appendChild(tds).appendChild(textNode);
+
+      // body의 자식노드로 추가 한다.
+      document.body.appendChild(tables);
+    }
+
+    function remove(){
+      let target = document.querySelector('#target');
+      target.parentNode.removeChild(target);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <script
+      src="https://kit.fontawesome.com/2cd23a15d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="shop_navi">
+        <ul class="depth1">
+          <li>
+            <a href="#">SHOP</a>
+            <ul class="depth2">
+              <li><a href="sunglas.html" target="glass" >SUNGLASSES</a></li>
+              <li><a href="glass.html" target="glass" >GLASSES</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <iframe
+        src="sunglas.html"
+        scrolling="no"
+        frameborder="0"
+        width="1070px"
+        height="1500px"
+        name="glass" id="ifram"
+      >
+        <!-- <div class="product_item" id="sun">
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1155ACol.35144WB22140.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>4COLORS</p>
+          <p>PHS-1155A</p>
+          <p>252,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1158ACol.45644WB21142.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-1158A</p>
+          <p>260,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1156ACol.55344WB19142.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-1156A</p>
+          <p>260,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS2047DCol.14.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-2047D</p>
+          <p>224,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1161BCol.8.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>4COLORS</p>
+          <p>PHS-1161B</p>
+          <p>212,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1160BCol.45744WB17135.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>4COLORS</p>
+          <p>PHS-1160B</p>
+          <p>212,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1162ACol.5.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-1162A</p>
+          <p>260,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS2052BCol.45944WB15142.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-2052B</p>
+          <p>240,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1159DCol.5.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>4COLORS</p>
+          <p>PHS-1159D</p>
+          <p>212,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1154ACol.5.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-1154A</p>
+          <p>240,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1153ACol.8.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-1153A</p>
+          <p>240,000won</p> 
+        </div> 
+      </div>
+      <div class="sunglasses">
+        <div class="product_img">
+          <a href="#"><img src="images/product/thumb-PHS1152ACol.4.png" alt="sun"></a>
+        </div>
+        <div class="caption">
+          <p>3COLORS</p>
+          <p>PHS-1152A</p>
+          <p>240,000won</p> 
+        </div> 
+      </div>
+    </div> -->
+      </iframe>
+    </div>
+
+    <script>
+      const linerander = document.querySelectorAll(
+        '.shop_navi .depth1 .depth2 li a'
+      );
+      const shopmain = document.querySelector('#ifram').src;
+      // for (let i = 0; i < linerander.length; i++) {
+      //   linerander[i].addEventListener('click', () => {
+      //     for (let j = 0; j < linerander.length; j++) {
+      //       linerander[j].style.borderBottom = 'none';
+      //       console.log(j);
+      //     }
+      //     linerander[i].style.borderBottom = '2px solid lightgray';
+      //     console.log(linerander[i]);
+      //   });
+      // }
+      for (let i of linerander) {
+        i.addEventListener('click', () => {
+          for (let j of linerander) {
+            j.style.borderBottom = 'none';
+          }
+          i.style.borderBottom = '2px solid lightgray';
+        });
+      }
+      
+      
+      // if(num==0){
+      //   linerander[0].style.borderBottom='2px solid lightgray';
+      //   linerander[1].style.borderBottom='none';
+      // }else {
+      //   linerander[0].style.borderBottom='none';
+      //   linerander[1].style.borderBottom='2px solid lightgray';
+      // }
+      // }
+      // linerander[1].classList.add('클래스명')
+      // for(let i of linearander){i.style.border=''
+    </script>
+  </body>
+</html>

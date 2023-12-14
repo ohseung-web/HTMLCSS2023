@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DropDown Navigation</title>
+    <style>
+      body {
+        color: #222;
+        line-height: 1.5em;
+      }
+      a {
+        color: #222;
+        text-decoration: none;
+      }
+      /* 마우스가 다른 곳에 hover가 되도 submenu가 보이는 문제 해결하기 위함 */
+      .dropdown {
+        /* block요소로 width가 100%가 된다. */
+        /* border:1px solid; */
+        /* width: 200px; */
+        /* display:inline-block로 변경하여
+           컨텐츠 양만큼 크기를 조절하기 위함 */
+        display: inline-block;
+      }
+      .dropdown-btn {
+        /* inherit 부모요소의 width 값을 상속한다. */
+        border: 1px solid black;
+        width: 200px;
+        /* a, button태그 높이는 padding으로 활용해도 된다 */
+        padding: 10px;
+        font-size: 20px;
+        background-color: yellowgreen;
+        color: #fff;
+        /* button태그는 기본 음영이 존재함 
+           음영을 제거해줌*/
+        border: none;
+        outline: none;
+        /* button은 손가락이 나오지 않으므로
+           손가락 포인터 지정한다 */
+        cursor: pointer;
+      }
+      .dropdown-submenu {
+        /* 마우스 hover되면 submenu 숨김 */
+        display: none;
+        /* border:1px solid black; */
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
+      }
+      .dropdown-submenu a {
+        /* a태그 인라인 요소로 세로배치먼저 */
+        display: block;
+        /* a태그의 간격을 만든다. */
+        padding: 7px;
+        text-align: center;
+      }
+      /* hover되면 반전주기 */
+      .dropdown-submenu a:hover {
+        background-color: #eee;
+      }
+      .dropdown:hover .dropdown-submenu {
+        /* dropdown:hover 다음에 다른요소가 오면 dropdown:hover는 명령을 내리고
+         dropdown-subment는 명령을 수행한다.
+         (단, hover다음에 나오는 요소는 반드시 자식요소이어야 한다.) */
+        /* +(인접선택) */
+        /* display:none을 화면에 보이게한다. */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropdown-btn">개발·프로그래밍</button>
+      <div class="dropdown-submenu">
+        <a href="#">Spring</a>
+        <a href="#">Java</a>
+        <a href="#">JavaScript</a>
+        <a href="#">HTML&CSS</a>
+        <a href="#">Python</a>
+        <a href="#">C++</a>
+        <a href="#">Jsp</a>
+        <a href="#">React</a>
+      </div>
+    </div>
+  </body>
+</html>

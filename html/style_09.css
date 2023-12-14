@@ -1,0 +1,18 @@
+a{
+  color: #000;
+  text-decoration: none;
+  border:1px solid #ddd;
+  /* 인라인 요소인 <a>태그를 
+  -> display를 이용 block으로 변경 */
+  display: inline-block;
+  /* block으로 변경되었기 때문에 
+     -> 한 줄에 여러개 배치 할 수 없다. 
+     그러므로 한 줄에 여러개도 배치 할 수 있고
+     크기도 일정하게 할 수 있는 inline-block으로 변경한다.*/
+  margin: 5px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+
+}

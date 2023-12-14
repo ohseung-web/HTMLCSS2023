@@ -1,0 +1,17 @@
+a{
+  color: black;
+  text-decoration: none;
+  border:1px solid gray;
+  /* a태그는 인라인요소이다. */
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  /* transition은 애니메이션 효과이다. */
+  transition: 0.5s;
+}
+a:hover{
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폰트어썸 이용한 체크&라디오 버튼 커스텀 연습</title>
+  <script
+      src="https://kit.fontawesome.com/2cd23a15d7.js"
+      crossorigin="anonymous"
+    ></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    body{
+      line-height: 1.5em;
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form input[type=checkbox]{
+      display: none;
+    } 
+    form label{
+      display: block;
+    }
+    /* 폰트어썸을 유니코드로 받아 before 가상클래스의 content에 입력한다. */
+    form label::before{
+      content: '\f00c';
+      /* 반드시 폰트어썸 글꼴 지정할 것 */
+      font-family: fontawesome;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
+      font-size: 13px;
+      /* befroe은 인라인요소로 크기적용 불가 display : inline-block로 변경 */
+      display: inline-block;
+      text-align: center;
+      line-height: 14px;
+      /* 최초 체크박스는 체크가 안되어 있어야 하므로 배경색제거하는 속성 transparent 사용 */
+      /* color: transparent; */
+      border-color: lightgray;
+      color: lightgray;
+      transition: 0.s;
+    }
+    form input[type=checkbox]:checked + label:before{
+      background-color:purple;
+      color: white;
+      border-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <form >
+    <input type="checkbox" id="chk1"><label for="chk1">HTML</label>
+    <input type="checkbox" id="chk2"><label for="chk2">CSS</label>
+    <input type="checkbox" id="chk3"><label for="chk3">jQuery</label>
+    <input type="checkbox" id="chk4"><label for="chk4">UNKit</label>
+  </form>
+</body>
+</html>

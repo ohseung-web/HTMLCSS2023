@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>표 만들기 연습문제</title>
+    <style>
+      body {
+        font-size: 16px;
+      }
+      table {
+        width: 1200px;
+        height: 300px;
+        border-collapse: collapse;
+      }
+      table td,
+      table th {
+        text-align: center;
+        border: 1px solid lightgray;
+      }
+      table th {
+        background-color: rgb(61, 81, 139);
+        color: white;
+      }
+      caption {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        부가세 포함된 실제 금액입니다.
+      </caption>
+      <tr>
+        <th rowspan="2">인터넷 종류</th>
+        <th rowspan="2">할인상품</th>
+        <th colspan="6">모바일 요금 총액에 따른 할인 금액</th>
+      </tr>
+      <tr>
+        <th>22,000원 미만</th>
+        <th>22,000원 이상</th>
+        <th>64,900원 이상</th>
+        <th>108,900원 이상</th>
+        <th>141,900원 이상</th>
+        <th>174,900원 이상</th>
+      </tr>
+      <tr>
+        <td rowspan="3">10GiGA 인터넷, GiGA인터넷</td>
+        <td>총 할인금액</td>
+        <td>2,200원 할인</td>
+        <td>5,500원 할인</td>
+        <td>11,000원 할인</td>
+        <td>22,110원 할인</td>
+        <td>27,610원 할인</td>
+        <td>33,110원 할인</td>
+      </tr>
+      <tr>
+        <td>인터넷 할인금액</td>
+        <td>2,200원 할인</td>
+        <td colspan="5">5,500원 할인</td>
+      </tr>
+      <tr>
+        <td>모바일 할인금액</td>
+        <td>-</td>
+        <td>-</td>
+        <td>5,500원 할인</td>
+        <td>16,610원 할인</td>
+        <td>22,110원 할인</td>
+        <td>27,610원 할인</td>
+      </tr>
+      <tr>
+        <td rowspan="3">인터넷 최대 100M</td>
+        <td>총 할인금액</td>
+        <td>1,650원 할인</td>
+        <td>3,300원 할인</td>
+        <td>8,800원 할인</td>
+        <td>19,800원 할인</td>
+        <td>24,200원 할인</td>
+        <td>28,600원 할인</td>
+      </tr>
+      <tr>
+        <td>인터넷 할인금액</td>
+        <td>1,650원 할인</td>
+        <td>3,300원 할인</td>
+        <td colspan="4">5,500원 할인</td>
+      </tr>
+      <tr>
+        <td>모바일 할인금액</td>
+        <td>-</td>
+        <td>-</td>
+        <td>3,300원 할인</td>
+        <td>14,300원 할인</td>
+        <td>18,700원 할인</td>
+        <td>23,100원 할인</td>
+      </tr>
+    </table>
+  </body>
+</html>

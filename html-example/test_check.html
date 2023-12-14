@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      body {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      .custom input[type='checkbox'] {
+        display: none;
+      }
+      .grade input[type='radio'] {
+        display: none;
+      }
+      .custom label em {
+        display: inline-block;
+        /* border: 1px solid red; */
+        /* 이미지 자체 사이즈를 width와 height로 지정한다. */
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 5px;
+        /* background의 이미지 삽입하는 방법 
+           background의 이미지 반복제거 : no-repeat
+        */
+        background: url(images/checkbox-01.png) no-repeat;
+        /* 수평의 가운데 정렬 */
+        background-position: left center;
+      }
+      /* 체크박스가 체크되었다는 가상 클래스 checked이다. */
+      .custom input[type='checkbox']:checked + label em {
+        background-position: right center;
+      }
+  </style>
+  
+</head>
+<body>
+  <div class="custom">
+    <!-- 체크박스나 문자나 둘중 하나만 클릭해도 선택되도록 label의 for이름과 input의 id이름을 동일하게 지정한다. -->
+    <input type="checkbox" id="agree-chk" /><label for="agree-chk"
+      ><em></em>약관을 충분히 이해 하였으며 동의 합니다.</label
+    >
+  </div>
+  <br /><br />
+  <div class="grade">
+    <input type="radio" name="grade" id="grade-chek1" /><label
+      for="grade-chek1"><em></em>초등학생</label>
+    <input type="radio" name="grade" id="grade-chek2" /><label
+      for="grade-chek2"><em></em>중학생</label>
+    <input type="radio" name="grade" id="grade-chek3" /><label
+      for="grade-chek3"><em></em>고등학생</label>
+    <input type="radio" name="grade" id="grade-chek4" /><label
+      for="grade-chek4"><em></em>대학생</label>
+  </div>
+</body>
+</html>

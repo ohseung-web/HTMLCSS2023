@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  /* margin-top: 5px; */
+}
+.container {
+  margin-top: 190px;
+  width: 970px;
+  height: 2155px;
+  /* border: 1px solid red; */
+}
+/* hr태그 색상변경 css */
+.container hr {
+  background-color: lightgray;
+  height: 1px;
+  border: 0;
+}
+.page_header {
+  width: 940px;
+  height: 75px;
+  text-align: center;
+}
+.page_header p {
+  padding: 20px 0;
+}
+form .input_write p,
+label,
+span,
+.page_header p {
+  font-size: 12px;
+}
+form .input_write {
+  width: 940px;
+  height: 762px;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+}
+form .input_write .title {
+  width: 940px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+form .items {
+  width: 940px;
+  height: 670px;
+  /* border: 1px solid green; */
+}
+form span {
+  color: red;
+  margin-right: 5px;
+}
+/* input 요소 css 시작 */
+form .item {
+  /* form안의 모든 input 크기및 여백 지정  */
+  width: 940px;
+  height: 40px;
+  /* border: 1px solid dodgerblue; */
+  margin-bottom: 10px;
+  line-height: 35px;
+}
+form .input_write .items label {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+}
+form .input_write .items .item > input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+/* 주소부분 css  */
+form .input_write .items .item:nth-child(7) {
+  width: inherit;
+  height: 150px;
+}
+form .input_write .items .item .address2 {
+  margin-left: 150px;
+  margin-bottom: 5px;
+}
+form .input_write .items .item .address2 input {
+  width: 780px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+form .address2 #add2 {
+  background-color: #eee;
+}
+form .input_write .items .item input:focus {
+  border: 1px solid black;
+  transition: 0.2s;
+}
+form .input_write .items .item button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  background-color: gray;
+  color: white;
+  margin-left: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+/* checkbox css 시작 */
+form input[type='checkbox'] {
+  display: none;
+}
+form .input_write .items .item .chklabel {
+  width: 300px;
+  height: 30px;
+}
+form .chklabel::before {
+  content: '\f00c';
+  font-family: fontawesome;
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  line-height: 13px;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  margin-right: 5px;
+  color: transparent;
+  display: inline-block;
+}
+form input[type='checkbox']:checked + .chklabel::before {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+/* textarea css 시작 */
+form .service_terms,
+.privarcy_terms {
+  margin-top: -10px;
+  width: 940px;
+  height: 522px;
+  /* border: 1px solid red; */
+}
+textarea {
+  width: 940px;
+  height: 320px;
+  padding: 20px;
+  /* box-sizing: border-box; */
+  border: solid 1px lightgray;
+  /* border-radius: 5px; */
+  font-size: 12px;
+  resize: both;
+  background-color: #eee;
+  /* textarea 문장 자동 줄바꿈 */
+  white-space: pre-wrap;
+  /* 글자 기준으로 줄바꿈합니다. */
+  /* word-break: break-all; */
+  color: gray;
+  line-height: 1.5em;
+}
+/* button css */
+form .btn {
+  width: 940px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.btn #memberbtn {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  border: none;
+  cursor: pointer;
+}

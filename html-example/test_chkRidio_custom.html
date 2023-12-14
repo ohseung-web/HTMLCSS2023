@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>체크박스 라이오 버튼 커스텀 연습</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+      body {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      /* 체크박스 custom css */
+      /* checkbox 화면에 숨김 */
+      .custom input[type='checkbox'] {
+        display: none;
+      }
+      /* label em 태그안에 이미지
+       백라운드로 지정하여 삽입 */
+      .custom label em {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url(images/checkbox-01.png) no-repeat;
+        /* 백그라운드 이미지 수평가운데 정렬 */
+        background-position: left center;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      /* 체크박스가 체크되었다는 가상 클래스 checked 이용
+   단, checked가상클래스는 + 인접선택자와 함께 사용한다.
+   */
+      .custom input[type='checkbox']:checked + label em {
+        background-position: right center;
+      }
+      .custom label{
+        cursor: pointer;
+      }
+      /* 라디오버튼 커스텀 css */
+      .grade input[type='radio'] {
+        display: none;
+      }
+      .grade label em {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url(images/radio-01.png) no-repeat;
+        background-position: left center;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      .grade input[type='radio']:checked + label em {
+        background-position: right center;
+      }
+      /* label의 글자색 변경 */
+      .grade input[type=radio]:checked + label{
+        color: crimson;
+      }
+      .grade label{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- checkbox custom html -->
+    <div class="custom">
+      <input type="checkbox" id="agree-chk" />
+      <label for="agree-chk"
+        ><em></em>약관을 충분히 이해하였으며 동의 합니다.
+      </label>
+    </div>
+    <br /><br />
+    <!-- radio custom html -->
+    <div class="grade">
+      <input type="radio" name="grade" id="grade-chk1" /><label for="grade-chk1"
+        ><em></em>초등학생</label
+      >
+      <input type="radio" name="grade" id="grade-chk2" /><label for="grade-chk2"
+        ><em></em>중학생</label
+      >
+      <input type="radio" name="grade" id="grade-chk3" /><label for="grade-chk3"
+        ><em></em>고등학생</label
+      >
+      <input type="radio" name="grade" id="grade-chk4" /><label for="grade-chk4"
+        ><em></em>대학생</label
+      >
+    </div>
+  </body>
+</html>

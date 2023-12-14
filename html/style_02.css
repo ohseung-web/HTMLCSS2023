@@ -1,0 +1,12 @@
+h1 {
+    word-spacing: 15px;
+}
+p.text {
+  text-indent: 10px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+p.copy {
+   direction: rtl;
+}

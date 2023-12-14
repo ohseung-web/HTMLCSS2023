@@ -1,0 +1,54 @@
+.container{
+  border:1px solid red;
+  width: 1200px;
+  margin: auto;
+}
+header{
+  background-color: skyblue;
+  /* height: 100px; */
+  overflow: hidden;
+}
+/* article공통적인 css 넣기 */
+header article{
+  background-color: gray;
+  width: 300px;
+  height: 100px;
+} 
+.logo{
+  float: left;
+}
+.navi{
+  float: right;
+}
+.box1{
+  background-color: yellowgreen;
+  /* 자식요소가 없기때문에
+     height값을 지정한다. */
+  height: 300px;
+}
+.box2{
+  /* box2는 article 자식요소가 
+    있기때문에 height를 줄 필요가 없다. */
+  background-color: greenyellow;
+  overflow: hidden;
+}
+.box2 article{
+  width: 33.333333%;
+  height: 300px;
+  float: left;
+}
+.sub1{
+  background-color: darkgray;
+}
+.sub2{
+  background-color: lightgray;
+}
+.sub3{
+  background-color: lightslategray;
+}
+.footer{
+  background-color: skyblue;
+  height: 100px;
+}
+
+

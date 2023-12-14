@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>여름방학 특강 신청</title>
+    <style>
+      fieldset {
+        line-height: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>여름방학 특강 신청하기</h3>
+    <form action="">
+      <fieldset>
+        <legend>교육과정</legend>
+        <label for="">영어회화</label>
+        <input type="text" value="오전 9:00~11:00" readonly />
+        <label for="">(초급레벨)</label>
+      </fieldset>
+      <fieldset>
+        <legend>신청자 기본 정보</legend>
+        <label for="">이름</label>
+        <input type="text" /><br />
+        <label for="">이메일</label>
+        <input type="email" /><br />
+        <labbel for="">비밀번호</labbel>
+        <input type="password" /><br />
+        <label for="">학과</label>
+        <select>
+          <option value="">학과를 선택하세요</option>
+          <option value="컴퓨터공학과">컴퓨터공학과</option>
+          <option value="국어국문학과">국어국문학과</option>
+          <option value="영어영문학과">영어영문학과</option>
+          <option value="전자융합과">전자융합과</option>
+        </select>
+        <br />
+        <label for="">성별</label>
+        <input type="radio" checked />남자 <input type="radio" />여자
+        <br />
+        <label for="">관심사</label>
+        <input type="checkbox" />여행 <input type="checkbox" />게임
+        <input type="checkbox" />공연 <input type="checkbox" />운동
+        <input type="checkbox" />기타
+      </fieldset>
+      <p>
+        <input type="submit" value="수강신청" />
+        <input type="reset" value="다시쓰기" />
+      </p>
+    </form>
+  </body>
+</html>

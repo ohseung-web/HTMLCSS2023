@@ -1,0 +1,18 @@
+/* 부모요소-postion:relative */
+/* 자식요소-postion:absolute */
+.parent{
+  background-color: dodgerblue;
+  width: 600px;
+  height: 300px;
+  /* position: relative; */
+}
+.child{
+  background-color: crimson;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  /* 좌표를 입력한다.left, right, top, bottom
+     (반드시 postion 속성과 함께 사용할때 작동한다. */
+  right: 0;
+  bottom: 0;
+}

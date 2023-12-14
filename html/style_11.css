@@ -1,0 +1,25 @@
+.parent{
+  border:5px solid red;
+  width: 600px;
+}
+.top{
+  background-color: rgba(128, 0, 128, 0.47);
+  height: 50px;
+}
+.left{
+  background-color:skyblue;
+  height: 100px;
+  width: 200px;
+  float: left;
+}
+.rigth{
+  background-color: orange;
+  height: 100px;
+  width: 400px;
+  float:right;
+}
+.clear{
+  background-color: rgba(128, 0, 128, 0.47);
+  height: 50px;
+  clear: both;
+}

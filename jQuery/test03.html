@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dom 테스트</title>
+ 
+</head>
+<body>
+  <script>
+    const images = ['pic-1.jpg', 'pic-2.jpg', 'pic-3.jpg', 'pic-4.jpg'];
+    const imgIndex = images[Math.floor(Math.random()*images.length)];
+    // img 태그를 추가한다.
+    const bgImg = document.createElement('img');
+    bgImg.src = `images/${imgIndex}`;
+
+    document.body.appendChild(bgImg);
+  </script>
+</body>
+</html>

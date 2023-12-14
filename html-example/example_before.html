@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>네비게이션 호버 이펙트 - Border</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    body{
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.5em;
+      margin: 0;
+      font-weight: 300;
+      color: #222;
+      background-color: #f4f4fe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .gnb a::before{
+      /* before-after은 inline 속성이다. */
+       content: '01';
+       background-color: royalblue;
+       color: #fff;
+       width: 20px;
+       height: 20px;
+       display: inline-block;
+       text-align: center;
+       line-height: 20px;
+       border-radius: 50px;
+       margin-right: 5px;
+       font-size: 12px;
+    }
+    .gnb a::after{
+      content: 'Update';
+      font-size: 12px;
+      background-color: crimson;
+      color: #fff;
+      margin-left: 5px;
+      padding: 2px;
+      border-radius: 3px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="gnb">
+    <a href="#">CoodingWorks Online Class</a>
+  </div>
+</body>
+</html>

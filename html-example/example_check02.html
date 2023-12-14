@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>커스텀 체크박스 스타일링(2)</title>
+    <script
+      src="https://kit.fontawesome.com/2cd23a15d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5em;
+        margin: 0;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      a {
+        text-decoration: none;
+      }
+      form input[type='checkbox'] {
+        /* 기능은하되 안보이게 지정 */
+        display: none;
+      }
+      form label {
+        display: block;
+      }
+      /* before가상 클래스는 유니코드 사용 가능 */
+      form label:before {
+        content: '\f00c';
+        /* 반드시 font-family:fontawesome 해야 화면에
+         폰트어썸 문자가 출력된다. */
+        font-family: fontawesome;
+        border: 1px solid #333;
+        width: 14px;
+        height: 14px;
+        border-radius: 3px;
+        margin-right: 5px;
+        font-size: 13px;
+        /* vertical-align: middle; */
+        /* before는 인라인요소로 크기가 적용되지 않는다.
+         display:inline-block로 지정 */
+        display: inline-block;
+        text-align: center;
+        line-height: 14px;
+        /* 최초상태이기 떄문에 color를 안보이게 지정 : transparent */
+        color: transparent;
+        transition: 0.2s;
+      }
+      /* checkbox를 클릭했을때의 상태 */
+      form input[type='checkbox']:checked + label::before {
+        background-color: crimson;
+        color: #fff;
+        /* transparent:투명하게 배경색을 없애는 속성  */
+        border-color: transparent;
+      }
+      /* active 가상클래스로 클릭하여 눌린느낌 표현 */
+      form input[type='checkbox'] + label:active::before{
+          transform: scale(0);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="checkbox" id="chk1" />
+      <label for="chk1">HTML</label>
+      <input type="checkbox" id="chk2" />
+      <label for="chk2">CSS</label>
+      <input type="checkbox" id="chk3" />
+      <label for="chk3">jQuery</label>
+      <input type="checkbox" id="chk4" />
+      <label for="chk4">UIKit</label>
+    </form>
+  </body>
+</html>

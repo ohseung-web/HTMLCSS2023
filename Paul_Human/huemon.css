@@ -1,0 +1,279 @@
+/* body의 세로 스크롤바 화면에 숨기는 CSS */
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  width: 100%;
+  height: 1080px;
+  background-image: url(images/paulhueman_main.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+/* header CSS ----------------------------------*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 158px;
+  z-index: 9999;
+  /* border: 1px solid red; */
+}
+/* header_search CSS작성-------------------------- */
+header .header_search {
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_search .search_item1 a,
+.search_item2 a {
+  font-size: 12px;
+}
+.header_search .search_item2 .depth1 li > a > img {
+  width: 20px;
+  height: 25px;
+  margin-top: 10px;
+}
+/* .search_item1  메뉴 hover 가상클래스 */
+.header_search .search_item1 {
+  width: 150px;
+  height: inherit;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  padding: 0 15px;
+  padding-left: 10px;
+}
+.header_search .search_item1 .depth2 {
+  display: none;
+}
+.search_item1 .depth1 > li:hover > .depth2 {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  display: block;
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 10px 0;
+}
+.search_item1 .depth1 > li:hover > .depth2 a {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.search_item1 .depth1 > li > a:hover {
+  text-decoration: underline;
+}
+/* .search_item2  메뉴 hover 가상클래스 */
+.header_search .search_item2 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 10px; */
+}
+.header_search .search_item2 .depth1 {
+  width: 340px;
+  height: 50px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* border:1px solid red; */
+}
+.header_search .search_item2 .depth1 > li {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  /* flex: 1; */
+  /* border:1px solid blue; */
+}
+.header_search .search_item2 .depth1 > li:nth-child(2) {
+  width: 50px;
+  /* flex: 3; */
+}
+.header_search .search_item2 .depth1 > li:nth-child(3) {
+  width: 200px;
+}
+.header_search .search_item2 .depth2 {
+  display: none;
+}
+.search_item2 .depth1 > li:hover > .depth2 {
+  position: absolute;
+  display: block;
+  /* border: 1px solid red; */
+}
+.search_item2 .depth1 > li > .depth2 {
+  width: 200px;
+  height: 100px;
+  text-align: left;
+  padding: 5px 17px;
+  background-color: rgb(59, 59, 59);
+}
+.search_item2 .depth1 > li:hover > .depth2 a {
+  display: block;
+  color: white;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: normal;
+}
+.search_item2 .depth1 .depth2 li:nth-child(3) {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 150px;
+  height: 25px;
+  color:white;
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+  /* margin-left: 25px; */
+}
+.search_item2 .depth1 > li > a:hover {
+  text-decoration: underline;
+}
+.search_item2 .depth2 > li > a:hover {
+  text-decoration: underline;
+}
+.search_item2 .depth2 > li:nth-child(3) > a:hover{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+.search_item2 .depth1 input[type='text'] {
+  width: 160px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+.search_item2 .depth1 input::placeholder {
+  font-size: 12px;
+  color: gray;
+  font-weight: 100;
+}
+.search_item2 .depth1 li:nth-child(1) a {
+  padding-left: 10px;
+  font-weight: bold;
+}
+.search_item2 .depth1 li:nth-child(3) a {
+  font-size: 15px;
+  padding: 0 5px;
+}
+/* header_title CSS 작성----------------------- */
+header .header_title {
+  width: 100%;
+  height: 60px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_title .logo {
+  width: 189px;
+  height: 38px;
+}
+/* header_navi CSS 작성 --------------------------*/
+header .header_navi {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+.header_navi .depth1 {
+  width: 800px;
+  height: 30px;
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 30px 30px;
+  /* background-color: white; */
+}
+.header_navi .depth1 .depth2 {
+  display: none;
+}
+.header_navi .depth1 li {
+  flex: 1;
+  text-align: center;
+}
+.header_navi .depth1 > li:hover > a {
+  /* display: block;
+  height: 48px; */
+  border-bottom: 3px solid black;
+}
+.header_navi .depth1 li:hover .depth2 {
+  display: block;
+  padding: 10px;
+}
+.header_navi .depth1 .depth2 a {
+  font-size: 12px;
+  line-height: 2.5em;
+}
+/* section css 시작 -----------------------*/
+section {
+  position: absolute;
+  /* z-index: 888; */
+  padding-top: 150px;
+  width: 100%;
+  height: 800px;
+  /* border: 1px solid blue; */
+  top: 160px;
+  left: 0;
+}
+
+/* footer css 시작-------------------------- */
+footer {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  background-color: rgb(59, 59, 59);
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+footer p {
+  display: inline-block;
+  color: #888888;
+  font-size: 11px;
+  margin: 15px;
+  line-height: 2em;
+}
+footer .footer_item {
+  width: 1900px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  /* border: 1px solid red; */
+}
+footer .footer_item a {
+  font-size: 11px;
+  color: #888888;
+}
+.footer_item .menu_item ul {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.footer_item .menu_item > ul > li {
+  flex: 1;
+}
+.footer_item .menu_icon ul {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.footer_item .menu_icon ul li {
+  flex: 1;
+}
+.footer_item .menu_icon ul li a {
+  font-size: 18px;
+}

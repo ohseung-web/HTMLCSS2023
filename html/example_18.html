@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 시멘틱 태그 레이아웃</title>
+    <style>
+      .container {
+        border: 1px solid red;
+        width: 1200px;
+        margin: auto;
+        /* overflow: hidden; */
+      }
+      header {
+        background-color: skyblue;
+        height: 100px;
+      }
+      nav {
+        background-color: aquamarine;
+        height: 100px;
+      }
+      .box1 {
+        background-color: rgba(255, 255, 0, 0.529);
+        width: 900px;
+        height: 700px;
+        float: left;
+      }
+      .box1 .sub2 {
+        background-color: lightblue;
+        width: 900px;
+        height: 200px;
+        margin-top: 500px;
+        float: left;
+      }
+      .sidebar {
+        background-color: rgba(255, 166, 0, 0.557);
+        width: 300px;
+        height: 700px;
+        float: right;
+      }
+      /* .sub {
+        background-color: lightblue;
+        height: 200px;
+        width: 900px;
+        float: left;
+      } */
+      .footer {
+        background-color: skyblue;
+        height: 100px;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <nav></nav>
+      <section class="box1">
+        <article class="sub2"></article>
+      </section>
+      <aside class="sidebar"></aside>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

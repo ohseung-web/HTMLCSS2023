@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kmong test</title>
+  <script
+      src="https://kit.fontawesome.com/2cd23a15d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        color: black;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .section{
+        border: 1px solid black;
+        padding: 15px;
+      }
+      .title {
+        font-family: 'Angkor', cursive;
+        font-size: 30px;
+        text-align: center;
+      }
+      .item {
+        width: 350px;
+        margin-bottom: 20px;
+        /* border: 1px solid red; */
+      }
+      .item input[type='email'],
+      input[type='password'],
+      button[type='submit'] {
+        border-radius: 5px;
+        width: inherit;
+        height: 45px;
+        outline: none;
+        border: 1px solid lightgray;
+      }
+     
+    </style>
+</head>
+<body>
+  <div class="section">
+    <div class="title">
+      <p>kmong</p>
+    </div>
+    <form class="info">
+        <div class="item">
+          <input type="email" placeholder="이메일을 입력해주세요." />
+        </div>
+        <div class="item">
+          <input type="password" placeholder="비밀번호를 입력해주세요." />
+        </div>
+        <div class="item">
+          <button type="submit">로그인</button>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="login-chk" /><label for="login-chk"
+            ><span></span>로그인 상태 유지</label
+          >
+          <a href="#">아이디·비밀번호 찾기</a>
+        </div>
+        <div class="item">
+          <p>SNS 간편 로그인</p>
+          <div class="sns">
+            <a href="#"><i class="fa-solid fa-n"></i></a>
+            <a href="#"><i class="fa-solid fa-comment"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-apple"></i></a>
+          </div>
+        </div>
+        <div class="item">
+          <button type="submit">회원가입</button>
+        </div>
+        <div class="item">
+          <p>회원가입 하면 <span>10만원 쿠폰팩</span>을 드려요!</p>
+        </div>
+    </form>
+  </div>
+</body>
+</html>

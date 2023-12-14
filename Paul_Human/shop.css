@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Lumanosimo&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 108px;
+  background-color: white;
+}
+.container {
+  width: 1170px;
+  height: 1220px;
+  padding-top: 50px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+/* shop 네비게이션 css */
+.container .shop_navi {
+  width: 100px;
+  height: 83px;
+  margin-top: 50px;
+  /* border: 1px solid blue; */
+}
+.shop_navi .depth1 > li {
+  width: 100px;
+  height: 48px;
+  line-height: 40px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.shop_navi .depth1 > li > a {
+  font-weight: bold;
+  font-size: 12px;
+  margin: 20px;
+}
+.shop_navi .depth1 > li > .depth2 {
+  position: absolute;
+  z-index: 999;
+  width: 100px;
+  height: 40px;
+  top: 50px;
+  left: 30px;
+  /* border: 1px solid blue; */
+}
+.shop_navi .depth1 > li > .depth2 > li > a {
+  line-height: 2em;
+  font-size: 12px;
+}
+/* sunglasses 상품목록 css */
+.container .product_item {
+  width: 1070px;
+  height: 1500px;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product_item .sunglasses {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  margin-left: 30px;
+  /* padding: 10px; */
+  text-align: center;
+  overflow: hidden;
+  /* border: 1px solid yellow; */
+  /* position: relative; */
+}
+.product_item .sunglasses .product_img {
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.product_item .sunglasses img {
+  width: 260px;
+  height: 150px;
+  /* border: 1px solid crimson; */
+  /* transition: 0.5s; */
+}
+.product_item .sunglasses .product_img .sub_img {
+  display: none;
+}
+/* 상품목록 caption css */
+.product_item .sunglasses .caption {
+  width: inherit;
+  height: 100px;
+  text-align: center;
+  vertical-align: bottom;
+  /* border: 1px solid black; */
+}
+/* 추가 css */
+.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftimg,
+.rightimg {
+  width: 90px;
+  height: 100px;
+  /* padding: 0 30px; */
+  line-height: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-size: 10px;
+  /* border:1px solid red; */
+}
+.leftimg {
+  text-align: right;
+  position: relative;
+}
+.rightimg {
+  text-align: left;
+  position: relative;
+}
+.leftimg:hover {
+  color: black;
+}
+.rightimg:hover {
+  color: black;
+}
+.sunglasses .caption p {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.sunglasses .caption p:nth-child(3) {
+  margin-top: 15px;
+}
+/* 안경 애니메이션 */

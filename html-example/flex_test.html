@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>flex test</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      .section {
+        width: 1200px;
+        height: 80px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+      }
+      .logo {
+        flex: 1;
+        /* align-self: center; */
+        font-size: 36px;
+        line-height: 2.3em;
+        padding: 0 0 0 30px;
+      }
+      .navi {
+        flex: 8;
+      }
+      .navi .dept1 {
+        display: flex;
+        justify-content: center;
+      }
+      .navi .dept1 > li {
+        text-align: center;
+        margin: 0 15px;
+        width: 100px;
+        position: relative;
+        line-height: 6em;
+      }
+      .navi .dept2 {
+        position: absolute;
+        display: none;
+        width: 100px;
+        top: 80px;
+      }
+      .navi .dept2 > li > a {
+        display: block;
+        line-height: 2.5em;
+      }
+      .navi .dept1 li:hover > .dept2 {
+        display: block;
+      }
+      .navi .dept1 > li > a:hover {
+        color: purple;
+        border-bottom: 1px solid purple;
+      }
+      .dept2 > li > a:hover {
+        color: purple;
+        background-color: rgba(211, 211, 211, 0.783);
+      }
+      .profile {
+        flex: 2;
+      }
+      .profile ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .profile ul li {
+        font-size: 18px;
+        line-height: 5em;
+        margin-left: 30px;
+      }
+      .dept2 > li {
+        position: relative;
+      }
+      .dept2 > li .dept3 {
+        width: 100px;
+        position: absolute;
+        display: none;
+        left: 100%;
+        top: 0;
+      }
+      .dept2 > li:hover > .dept3 {
+        display: block;
+      }
+      .dept2 > li > .dept3 a {
+        line-height: 2.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="section">
+        <div class="logo">
+          <a href="#">LOGO</a>
+        </div>
+        <div class="navi">
+          <ul class="dept1">
+            <li>
+              <a href="#">MENU-1</a>
+              <ul class="dept2">
+                <li>
+                  <a href="#">SUB-MENU1</a>
+                  <ul class="dept3">
+                    <li><a href="#">sub-menu1</a></li>
+                    <li><a href="#">sub-menu2</a></li>
+                    <li><a href="#">sub-menu3</a></li>
+                    <li><a href="#">sub-menu4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">SUB-MENU2</a>
+                  <ul class="dept3">
+                    <li><a href="#">sub-menu1</a></li>
+                    <li><a href="#">sub-menu2</a></li>
+                    <li><a href="#">sub-menu3</a></li>
+                    <li><a href="#">sub-menu4</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">SUB-MENU3</a></li>
+                <li><a href="#">SUB-MENU4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MENU-2</a>
+              <ul class="dept2">
+                <li><a href="#">SUB-MENU1</a></li>
+                <li><a href="#">SUB-MENU2</a></li>
+                <li><a href="#">SUB-MENU3</a></li>
+                <li><a href="#">SUB-MENU4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MENU-3</a>
+              <ul class="dept2">
+                <li><a href="#">SUB-MENU1</a></li>
+                <li><a href="#">SUB-MENU2</a></li>
+                <li><a href="#">SUB-MENU3</a></li>
+                <li><a href="#">SUB-MENU4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MENU-4</a>
+              <ul class="dept2">
+                <li><a href="#">SUB-MENU1</a></li>
+                <li><a href="#">SUB-MENU2</a></li>
+                <li><a href="#">SUB-MENU3</a></li>
+                <li><a href="#">SUB-MENU4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MENU-5</a>
+              <ul class="dept2">
+                <li><a href="#">SUB-MENU1</a></li>
+                <li><a href="#">SUB-MENU2</a></li>
+                <li><a href="#">SUB-MENU3</a></li>
+                <li><a href="#">SUB-MENU4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="profile">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

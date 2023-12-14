@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      color: black;
+      font-size: 18px;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+    .dropdown{
+      /* 부모요소, 자식요소 간격 조정을 알아서 
+         정렬하고자 하는 부모요소에만 적용가능
+         display: inline-flex; 요즘 트랜드 CSS
+         */
+      display: flex;
+      /* border:1px solid black; */
+      /* display: inline-block; */
+    }
+    .dropdown-btn{
+      width: 100px;
+      padding: 10px;
+      /* margin-left: -8px; */
+      border: none;
+      /* border: 1px solid black; */
+      outline: none;
+      cursor: pointer;
+      position: relative;
+    }
+    .dropdown-submenu{
+      width: inherit;
+      display: none;
+      background-color: black;
+      color: white;
+      position: absolute;
+      /* border:1px solid red; */
+      /* margin-left: -1px; */
+      left: 0;
+      top:100%;
+    }
+    .dropdown .dropdown-submenu a{
+      display: block;
+      padding: 10px 0;
+    }
+    .dropdown .dropdown-submenu a:hover{
+      background-color: rgb(194, 194, 194);
+      color: black;
+    }
+    .dropdown .dropdown-btn:hover > .dropdown-submenu {
+      display: block;
+    }
+    .dropdown .dropdown-btn:hover{
+      background-color: black;
+      color: white;
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button class="dropdown-btn">웹개발
+      <div class="dropdown-submenu">
+        <a href="#">HTML/CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">React</a>
+      </div>
+    </button>
+    <button class="dropdown-btn">백앤드
+      <div class="dropdown-submenu">
+        <a href="#">Java</a>
+        <a href="#">Spring</a>
+        <a href="#">Python</a>
+      </div>
+    </button>
+    <button class="dropdown-btn">게임개발
+      <div class="dropdown-submenu">
+        <a href="#">C#</a>
+        <a href="#">C++</a>
+        <a href="#">Scratch</a>
+      </div>
+    </button>
+  </div>
+</body>
+</html>
